@@ -1,0 +1,87 @@
+/* Фон сторінки */
+body {
+  background-color: #f0f8ff;
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+/* Заголовки */
+h1 {
+  color: darkblue !important;
+  text-align: center;
+  font-size: 32px;
+}
+
+h2 {
+  color: #006699;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Посилання */
+a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Списки */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+dl {
+  font-style: italic;
+}
+
+/* Таблиці */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #aaa;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #e0e0e0;
+}
+
+/* Контекстний селектор */
+div i {
+  color: green;
+}
+
+/* Сусідній селектор (правка з !important) */
+b + i {
+  color: blue !important;
+}
+
+/* Дочірній селектор */
+p > i {
+  color: red;
+}
+
+/* Блочні елементи */
+div, h3, table {
+  border: 1px dotted black;
+  margin: 10px;
+  padding: 5px;
+}
+

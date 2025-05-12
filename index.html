@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Katya Tereshchenko">
+  <title>Довідники - Лабораторна 4</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    a {
+      color: darkblue;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <hr>
+  <h2>Тестування селекторів CSS</h2>
+
+  <div>
+    <h3>Контекстний селектор</h3>
+    <p>Це абзац з <i>курсивом</i> всередині <code>div</code></p>
+  </div>
+  <p><b>Сусідній селектор:</b><i>цей елемент має бути синім</i></p>
+  <p>Дочірній селектор: <i>цей елемент має бути червоним</i></p>
+  <ul>
+    <li>Пункт 1</li>
+    <li>Пункт 2</li>
+  </ul>
+
+  <h1>Онлайн-довідники</h1>
+
+  <p><b>Ласкаво просимо</b> до <i>довідкового порталу</i>! Цей сайт містить інформацію з різних сфер: науки, медицини та права.</p>
+
+  <p style="background-color: #fff0f5; padding: 10px;">
+    Скористайтесь посиланнями нижче, щоб перейти до потрібного розділу:
+  </p>
+
+  <ul type="circle">
+    <li><a href="science.html">Наукові довідники</a></li>
+    <li><a href="medicine.html">Медичні довідники</a></li>
+    <li><a href="legal.html">Юридичні довідники</a></li>
+  </ul>
+
+  <p><a href="#footer">Перейти до нижньої частини сторінки (якір)</a></p>
+  <p><a href="https://uk.wikipedia.org/wiki/Довідник" target="_blank">Читати більше у Вікіпедії</a></p>
+
+  <h2>Тематичні довідники у таблиці</h2>
+
+  <table>
+    <caption><b>Категорії довідників</b></caption>
+    <tr>
+      <th>Наука</th>
+      <th>Медицина</th>
+      <th>Право</th>
+    </tr>
+    <tr>
+      <td><img src="science.jpg" width="100" height="70" alt="Наука"></td>
+      <td><img src="medicine.jpg" width="100" height="70" alt="Медицина"></td>
+      <td><img src="legal.jpg" width="100" height="70" alt="Право"></td>
+    </tr>
+    <tr>
+      <td><a href="science.html">Читати</a></td>
+      <td><a href="medicine.html">Переглянути</a></td>
+      <td><a href="legal.html">Відкрити</a></td>
+    </tr>
+    <tr>
+      <td>Наукові статті, енциклопедії</td>
+      <td>Довідники з лікування та анатомії</td>
+      <td>Закони, кодекси, права</td>
+    </tr>
+  </table>
+
+  <h2>Структура сайту</h2>
+
+  <table>
+    <colgroup>
+      <col style="background-color: #e0ffff;">
+      <col style="background-color: #f5f5f5;">
+      <col style="background-color: #f5f5f5;">
+    </colgroup>
+    <tr>
+      <th rowspan="2">Розділ</th>
+      <th colspan="2">Вміст</th>
+    </tr>
+    <tr>
+      <th>Тип інформації</th>
+      <th>Формат</th>
+    </tr>
+    <tr>
+      <td>Наука</td>
+      <td>Енциклопедії, статті</td>
+      <td>Текст, зображення</td>
+    </tr>
+    <tr>
+      <td>Медицина</td>
+      <td>Анатомія, лікування</td>
+      <td>Текст, таблиці</td>
+    </tr>
+    <tr>
+      <td>Право</td>
+      <td>Закони, документи</td>
+      <td>Текст, PDF</td>
+    </tr>
+  </table>
+
+  <h2>Популярні довідники</h2>
+  <p align="center">
+    <a href="science_large.jpg" target="_blank"><img src="science.jpg" width="150" height="100" alt="Наука"></a>
+    <a href="medicine_large.jpg" target="_blank"><img src="medicine.jpg" width="150" height="100" alt="Медицина"></a>
+    <a href="legal_large.jpg" target="_blank"><img src="legal.jpg" width="150" height="100" alt="Право"></a>
+  </p>
+
+  <h2>Перегляд сторінки у фреймі</h2>
+  <p align="center">
+    <iframe src="science.html" width="600" height="300" style="border:2px solid gray;">
+      Ваш браузер не підтримує фрейми.
+    </iframe>
+  </p>
+
+  <hr>
+  <p id="footer" align="center">© 2025 Katya Tereshchenko | Лабораторна №4</p>
+</body>
+</html>
